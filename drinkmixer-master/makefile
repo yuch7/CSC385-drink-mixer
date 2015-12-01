@@ -7,3 +7,5 @@ links=arduino-serial-lib.o
 drinkmixer: drinkmixer.o $(links)
 	$(CC) -g -o $@ $^
 
+clean: drinkmixer
+	rm -fr *.o $<
