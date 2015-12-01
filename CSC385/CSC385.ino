@@ -1,5 +1,5 @@
 int incomingByte = 0;
-int clock = 3;
+int ck = 3;
 int trans = 2;
 int interval = 300;
 int timeInterval = 1000;
@@ -9,9 +9,9 @@ void wByte(int b) {
     digitalWrite(trans, ((b >> i) & 1) ? HIGH : LOW);
     // Serial.print((b >> i) & 1);
     delay(interval);
-    digitalWrite(clock, HIGH);
+    digitalWrite(ck, HIGH);
     delay(interval);
-    digitalWrite(clock, LOW);
+    digitalWrite(ck, LOW);
     digitalWrite(trans, LOW);
     delay(interval);
   }
@@ -34,7 +34,7 @@ void loop() {
 
   while (nbyte >= 0) {
     while (Serial.available() > 0) {
-      bytes[nbyte] = Serial.read() - '0';
+      bytes[nbyte] = Serial.read();
       nbyte--;  
     }
     wByte(0);
@@ -53,7 +53,7 @@ void loop() {
         ((bytes[2]) ? 0b100 : 0b000);
   
       Serial.print(filter);
-      Serial.write(": ");
+      Serial.write(": "); 
       wByte(filter);
       Serial.write("\n");
       digitalWrite(13, LOW);
