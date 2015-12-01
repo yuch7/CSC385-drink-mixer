@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATtiny45"</DEVICE>
+ <WORKING_DIR>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn45def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\Debug/drink.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>drink.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>drink.map</FILE>
+  <FILE>drink.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>18</LINE></main>
+  <COLLECT_I2C><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>41</LINE></COLLECT_I2C>
+  <CLOCK_DENOISE><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>42</LINE></CLOCK_DENOISE>
+  <RESET_CLOCK><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>61</LINE></RESET_CLOCK>
+  <CLOCK_SPLIT><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>66</LINE></CLOCK_SPLIT>
+  <CLOCK_LOW><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>75</LINE></CLOCK_LOW>
+  <CLOCK_HIGH><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>86</LINE></CLOCK_HIGH>
+  <INTERP_COMMAND><FILE>C:\Users\malo\Documents\Atmel Studio\6.2\drink\drink\drink.asm</FILE><LINE>108</LINE></INTERP_COMMAND>
+ </LABELS>
+</ASSEMBLER_INFO>
