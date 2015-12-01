@@ -1,0 +1,8 @@
+Week 1:
+
+- Maxwell   : Timer interrupts
+- Maxwell   : skeleton for scheduler
+- Yu-Ching  : Block diagram
+
+
+
