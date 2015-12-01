@@ -24,6 +24,7 @@ void setup() {
   pinMode(13, OUTPUT);
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
+  delay(interval);
 }
 
 void loop() {
@@ -37,7 +38,7 @@ void loop() {
       bytes[nbyte] = Serial.read();
       nbyte--;  
     }
-    wByte(0);
+    wByte(0b1000);
   }
  
   Serial.write("processing input block...\n");
@@ -48,6 +49,7 @@ void loop() {
     bytes[2] > 0) {
   
       byte filter = 
+        0b1000 |
         ((bytes[0]) ? 0b001 : 0b000) |
         ((bytes[1]) ? 0b010 : 0b000) |
         ((bytes[2]) ? 0b100 : 0b000);
@@ -64,7 +66,7 @@ void loop() {
       delay(timeInterval);
    }
   Serial.write("resetting to 'off'\n");
-  wByte(0);
+  wByte(0b1000);
   Serial.write("done processing input block\n");
   nbyte = 0;
 }
